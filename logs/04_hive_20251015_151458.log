@@ -1,0 +1,41 @@
+2025-10-15 15:14:58,211 - INFO - ======================================================================
+2025-10-15 15:14:58,211 - INFO - INICIANDO FASE 4: CREACIÓN DE TABLAS HIVE/IMPALA
+2025-10-15 15:14:58,211 - INFO - ======================================================================
+2025-10-15 15:14:58,211 - INFO - Creando SparkSession: 04_CreateHiveTables
+2025-10-15 15:14:59,575 - INFO - ✅ SparkSession creada - Version: 3.5.0
+2025-10-15 15:14:59,575 - INFO - Creando tabla: transactions_processed
+2025-10-15 15:15:01,012 - INFO - 📝 DDL de referencia generado
+2025-10-15 15:15:01,471 - INFO - ✅ Tabla transactions_processed creada con 2000 registros
+2025-10-15 15:15:01,471 - INFO - Creando tabla: fraud_alerts
+2025-10-15 15:15:01,592 - INFO - ✅ Tabla fraud_alerts creada con 37 registros
+2025-10-15 15:15:01,592 - INFO - 
+======================================================================
+2025-10-15 15:15:01,592 - INFO - VERIFICANDO TABLAS CREADAS
+2025-10-15 15:15:01,592 - INFO - ======================================================================
+2025-10-15 15:15:02,076 - INFO - 
+Tablas disponibles: 2
+2025-10-15 15:15:02,076 - INFO -   - fraud_alerts (TEMPORARY)
+2025-10-15 15:15:02,076 - INFO -   - transactions_processed (TEMPORARY)
+2025-10-15 15:15:02,164 - INFO - 
+✅ transactions_processed: 2000 registros
+2025-10-15 15:15:02,164 - INFO - 
+Esquema de transactions_processed:
+2025-10-15 15:15:02,258 - INFO - 
+✅ fraud_alerts: 37 registros
+2025-10-15 15:15:02,258 - INFO - ======================================================================
+2025-10-15 15:15:02,258 - INFO - 
+💾 DDL guardado en: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/sql/create_tables.sql
+2025-10-15 15:15:02,258 - INFO - 
+======================================================================
+2025-10-15 15:15:02,258 - INFO - RESUMEN
+2025-10-15 15:15:02,258 - INFO - ======================================================================
+2025-10-15 15:15:02,258 - INFO - Tablas creadas en Spark SQL (simula Hive):
+2025-10-15 15:15:02,258 - INFO -   ✅ transactions_processed
+2025-10-15 15:15:02,258 - INFO -   ✅ fraud_alerts
+2025-10-15 15:15:02,258 - INFO - 
+DDL de referencia: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/sql/create_tables.sql
+2025-10-15 15:15:02,258 - INFO - ======================================================================
+2025-10-15 15:15:02,258 - INFO - ✅ FASE 4 COMPLETADA EXITOSAMENTE
+2025-10-15 15:15:02,258 - INFO - Deteniendo SparkSession...
+2025-10-15 15:15:02,529 - INFO - ✅ SparkSession detenida correctamente
+2025-10-15 15:15:02,530 - INFO - Closing down clientserver connection

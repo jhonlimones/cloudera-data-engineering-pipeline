@@ -1,0 +1,33 @@
+2025-10-15 13:38:36,737 - INFO - ======================================================================
+2025-10-15 13:38:36,737 - INFO - INICIANDO FASE 2: TRANSFORMACIÓN Y ENRIQUECIMIENTO
+2025-10-15 13:38:36,737 - INFO - ======================================================================
+2025-10-15 13:38:36,737 - INFO - Creando SparkSession: 02_TransformData
+2025-10-15 13:38:38,130 - INFO - ✅ SparkSession creada - Version: 3.5.0
+2025-10-15 13:38:38,130 - INFO - 📂 Leyendo datos desde: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/validated/transactions_validated.parquet
+2025-10-15 13:38:39,904 - INFO - ✅ Datos cargados: 2000 registros
+2025-10-15 13:38:39,904 - INFO - Extrayendo características temporales...
+2025-10-15 13:38:40,010 - INFO - ✅ Características temporales extraídas
+2025-10-15 13:38:40,010 - INFO - Creando categorías de monto...
+2025-10-15 13:38:40,022 - INFO - ✅ Categorías de monto creadas
+2025-10-15 13:38:40,022 - INFO - Calculando features de velocidad transaccional...
+2025-10-15 13:38:40,081 - INFO - ✅ Features de velocidad calculadas
+2025-10-15 13:38:40,081 - INFO - Añadiendo indicadores de riesgo...
+2025-10-15 13:38:40,106 - INFO - ✅ Indicadores de riesgo añadidos
+2025-10-15 13:38:40,106 - INFO - 
+📊 Muestra de datos transformados:
+2025-10-15 13:38:40,786 - INFO - 💾 Guardando datos procesados en: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/processed
+2025-10-15 13:38:40,786 - INFO -    Particionando por: year, month, day
+2025-10-15 13:38:41,488 - INFO - 
+======================================================================
+2025-10-15 13:38:41,488 - INFO - RESUMEN DE TRANSFORMACIÓN
+2025-10-15 13:38:41,488 - INFO - ======================================================================
+2025-10-15 13:38:41,488 - INFO - Registros procesados: 2000
+2025-10-15 13:38:41,489 - INFO - Columnas originales: 16
+2025-10-15 13:38:41,489 - INFO - Columnas finales: 27
+2025-10-15 13:38:41,489 - INFO - Features nuevas: 11
+2025-10-15 13:38:41,489 - INFO - Output: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/processed
+2025-10-15 13:38:41,489 - INFO - ======================================================================
+2025-10-15 13:38:41,489 - INFO - ✅ FASE 2 COMPLETADA EXITOSAMENTE
+2025-10-15 13:38:41,489 - INFO - Deteniendo SparkSession...
+2025-10-15 13:38:41,586 - INFO - ✅ SparkSession detenida correctamente
+2025-10-15 13:38:41,586 - INFO - Closing down clientserver connection

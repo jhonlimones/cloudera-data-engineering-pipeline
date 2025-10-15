@@ -1,0 +1,37 @@
+2025-10-15 15:14:40,153 - INFO - ======================================================================
+2025-10-15 15:14:40,153 - INFO - INICIANDO FASE 1: INGESTA Y VALIDACIÓN DE DATOS
+2025-10-15 15:14:40,153 - INFO - ======================================================================
+2025-10-15 15:14:40,153 - INFO - Creando SparkSession: 01_IngestData
+2025-10-15 15:14:41,558 - INFO - ✅ SparkSession creada - Version: 3.5.0
+2025-10-15 15:14:41,558 - INFO - 📂 Leyendo datos desde: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/raw/transactions.csv
+2025-10-15 15:14:43,241 - INFO - ✅ Datos cargados. Total registros: 2000
+2025-10-15 15:14:43,241 - INFO - 
+📊 Muestra de datos (primeras 5 filas):
+2025-10-15 15:14:43,652 - INFO - ============================================================
+2025-10-15 15:14:43,652 - INFO - INICIANDO VALIDACIÓN DE DATOS
+2025-10-15 15:14:43,652 - INFO - ============================================================
+2025-10-15 15:14:43,699 - INFO - ✅ Esquema validado correctamente
+2025-10-15 15:14:44,331 - INFO - ✅ No se encontraron valores nulos
+2025-10-15 15:14:44,509 - INFO - ✅ No hay duplicados en 'transaction_id'
+2025-10-15 15:14:44,792 - INFO - ✅ Todos los valores categóricos son válidos
+2025-10-15 15:14:44,972 - INFO - ✅ Rangos numéricos válidos
+2025-10-15 15:14:44,972 - INFO - ============================================================
+2025-10-15 15:14:44,972 - INFO - VALIDACIÓN COMPLETADA
+2025-10-15 15:14:44,973 - INFO - ============================================================
+2025-10-15 15:14:44,973 - INFO - Aplicando limpieza de datos...
+2025-10-15 15:14:45,247 - INFO - ✅ Limpieza completada. Registros finales: 2000
+2025-10-15 15:14:45,247 - INFO - 💾 Guardando datos validados en: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/validated/transactions_validated.parquet
+2025-10-15 15:14:45,831 - INFO - ✅ Verificación: 2000 registros guardados correctamente
+2025-10-15 15:14:45,831 - INFO - 
+======================================================================
+2025-10-15 15:14:45,831 - INFO - RESUMEN DE INGESTA
+2025-10-15 15:14:45,831 - INFO - ======================================================================
+2025-10-15 15:14:45,831 - INFO - Registros originales: 2000
+2025-10-15 15:14:45,897 - INFO - Registros validados: 2000
+2025-10-15 15:14:45,897 - INFO - Duplicados eliminados: 0
+2025-10-15 15:14:45,897 - INFO - Output: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/validated/transactions_validated.parquet
+2025-10-15 15:14:45,897 - INFO - ======================================================================
+2025-10-15 15:14:45,897 - INFO - ✅ FASE 1 COMPLETADA EXITOSAMENTE
+2025-10-15 15:14:45,897 - INFO - Deteniendo SparkSession...
+2025-10-15 15:14:46,020 - INFO - ✅ SparkSession detenida correctamente
+2025-10-15 15:14:46,021 - INFO - Closing down clientserver connection

@@ -1,0 +1,41 @@
+2025-10-15 15:14:51,888 - INFO - ======================================================================
+2025-10-15 15:14:51,888 - INFO - INICIANDO FASE 3: DETECCIÓN DE ANOMALÍAS Y FRAUDE
+2025-10-15 15:14:51,888 - INFO - ======================================================================
+2025-10-15 15:14:51,888 - INFO - Creando SparkSession: 03_FraudDetection
+2025-10-15 15:14:53,249 - INFO - ✅ SparkSession creada - Version: 3.5.0
+2025-10-15 15:14:53,250 - INFO - 📂 Leyendo datos desde: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/processed
+2025-10-15 15:14:55,144 - INFO - ✅ Datos cargados: 2000 registros
+2025-10-15 15:14:55,144 - INFO - Aplicando reglas de detección de fraude...
+2025-10-15 15:14:55,250 - INFO - ✅ Reglas de fraude aplicadas
+2025-10-15 15:14:55,251 - INFO - 
+======================================================================
+2025-10-15 15:14:55,251 - INFO - RESUMEN DE DETECCIÓN DE FRAUDE
+2025-10-15 15:14:55,251 - INFO - ======================================================================
+2025-10-15 15:14:55,530 - INFO - Total transacciones: 2000
+2025-10-15 15:14:55,530 - INFO - Fraudes detectados: 37 (1.85%)
+2025-10-15 15:14:55,530 - INFO - 
+Por prioridad de alerta:
+2025-10-15 15:14:56,088 - INFO - Fraudes por país (Top 5):
+2025-10-15 15:14:56,218 - INFO - Detecciones por regla:
+2025-10-15 15:14:56,293 - INFO -   - Status FRAUD: 18
+2025-10-15 15:14:56,359 - INFO -   - Monto alto rechazado: 16
+2025-10-15 15:14:56,462 - INFO -   - Nocturna sospechosa: 3
+2025-10-15 15:14:56,525 - INFO -   - Velocidad sospechosa: 0
+2025-10-15 15:14:56,525 - INFO - ======================================================================
+2025-10-15 15:14:56,579 - INFO - 
+📊 Muestra de alertas de fraude (Top 10 por risk score):
+2025-10-15 15:14:56,669 - INFO - 
+💾 Guardando alertas en: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/results/fraud_alerts/fraud_alerts.parquet
+2025-10-15 15:14:57,171 - INFO - 💾 Alertas también guardadas en CSV: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/results/fraud_alerts/fraud_alerts.csv
+2025-10-15 15:14:57,171 - INFO - 
+======================================================================
+2025-10-15 15:14:57,171 - INFO - ESTADÍSTICAS FINALES
+2025-10-15 15:14:57,171 - INFO - ======================================================================
+2025-10-15 15:14:57,171 - INFO - Total transacciones analizadas: 2000
+2025-10-15 15:14:57,171 - INFO - Alertas generadas: 37
+2025-10-15 15:14:57,171 - INFO - Tasa de detección: 1.85%
+2025-10-15 15:14:57,171 - INFO - ======================================================================
+2025-10-15 15:14:57,171 - INFO - ✅ FASE 3 COMPLETADA EXITOSAMENTE
+2025-10-15 15:14:57,171 - INFO - Deteniendo SparkSession...
+2025-10-15 15:14:57,701 - INFO - ✅ SparkSession detenida correctamente
+2025-10-15 15:14:57,702 - INFO - Closing down clientserver connection

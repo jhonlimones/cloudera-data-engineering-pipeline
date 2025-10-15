@@ -1,0 +1,65 @@
+2025-10-15 13:27:35,578 - INFO - 
+    ╔═══════════════════════════════════════════════════════════════╗
+    ║                                                               ║
+    ║       CLOUDERA DATA ENGINEERING PIPELINE                      ║
+    ║       Análisis de Transacciones Bancarias                     ║
+    ║                                                               ║
+    ╚═══════════════════════════════════════════════════════════════╝
+    
+2025-10-15 13:27:35,578 - INFO - Inicio del pipeline: 2025-10-15 13:27:35
+2025-10-15 13:27:35,578 - INFO - Scripts a ejecutar: 6
+2025-10-15 13:27:35,578 - INFO - 
+2025-10-15 13:27:35,578 - INFO - 
+################################################################################
+2025-10-15 13:27:35,578 - INFO - FASE 1/6: 01_ingest_data.py
+2025-10-15 13:27:35,578 - INFO - ################################################################################
+
+2025-10-15 13:27:35,578 - INFO - ================================================================================
+2025-10-15 13:27:35,578 - INFO - EJECUTANDO: 01_ingest_data.py
+2025-10-15 13:27:35,578 - INFO - ================================================================================
+2025-10-15 13:27:38,008 - ERROR - ❌ Error en 01_ingest_data.py
+2025-10-15 13:27:38,009 - ERROR - Código de salida: 1
+2025-10-15 13:27:38,009 - ERROR - STDOUT:
+✅ Constantes cargadas. Base dir: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/scripts
+
+2025-10-15 13:27:38,009 - ERROR - STDERR:
+2025-10-15 13:27:35,663 - INFO - ======================================================================
+2025-10-15 13:27:35,663 - INFO - INICIANDO FASE 1: INGESTA Y VALIDACIÓN DE DATOS
+2025-10-15 13:27:35,663 - INFO - ======================================================================
+2025-10-15 13:27:35,663 - INFO - Creando SparkSession: 01_IngestData
+25/10/15 13:27:36 WARN Utils: Your hostname, joarome resolves to a loopback address: 127.0.1.1; using 192.168.1.134 instead (on interface eno2)
+25/10/15 13:27:36 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+25/10/15 13:27:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-10-15 13:27:37,169 - INFO - ✅ SparkSession creada - Version: 3.5.0
+2025-10-15 13:27:37,169 - ERROR - ❌ Error en la ingesta: ❌ Archivo no encontrado: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/scripts/data/raw/transactions.csv
+Traceback (most recent call last):
+  File "/home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/scripts/01_ingest_data.py", line 85, in main
+    raise FileNotFoundError(f"❌ Archivo no encontrado: {RAW_TRANSACTIONS_FILE}")
+FileNotFoundError: ❌ Archivo no encontrado: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/scripts/data/raw/transactions.csv
+2025-10-15 13:27:37,169 - INFO - Deteniendo SparkSession...
+2025-10-15 13:27:37,624 - INFO - ✅ SparkSession detenida correctamente
+2025-10-15 13:27:37,625 - INFO - Closing down clientserver connection
+
+2025-10-15 13:27:38,009 - ERROR - 
+❌ Pipeline abortado en 01_ingest_data.py
+2025-10-15 13:27:38,009 - INFO - 
+================================================================================
+2025-10-15 13:27:38,009 - INFO - RESUMEN DEL PIPELINE
+2025-10-15 13:27:38,009 - INFO - ================================================================================
+2025-10-15 13:27:38,009 - INFO - 
+Ejecutados: 1/6
+2025-10-15 13:27:38,009 - INFO - Exitosos: 0
+2025-10-15 13:27:38,009 - INFO - Fallidos: 1
+2025-10-15 13:27:38,009 - INFO - 
+Tiempo total: 2.43 segundos (0.04 minutos)
+2025-10-15 13:27:38,009 - INFO - 
+Detalle por script:
+2025-10-15 13:27:38,009 - INFO -   ❌ ERROR | 01_ingest_data.py              | 2.43s
+2025-10-15 13:27:38,009 - INFO - 
+================================================================================
+2025-10-15 13:27:38,009 - ERROR - 💥 PIPELINE COMPLETADO CON ERRORES
+2025-10-15 13:27:38,009 - ERROR - ================================================================================
+2025-10-15 13:27:38,009 - ERROR - 
+📝 Revisa el log para más detalles: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/logs/pipeline_20251015_132735.log

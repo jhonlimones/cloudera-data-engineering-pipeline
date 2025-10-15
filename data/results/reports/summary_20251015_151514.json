@@ -1,0 +1,21 @@
+{
+  "fecha_generacion": "2025-10-15 15:15:14",
+  "periodo_analizado": "2025-10-01 a 2025-10-14",
+  "metricas_generales": {
+    "total_transacciones": 2000,
+    "clientes_unicos": 580,
+    "monto_total": 605402.99,
+    "monto_promedio": 302.7
+  },
+  "distribucion_estados": {
+    "aprobadas": 1637,
+    "rechazadas": 302,
+    "fraude": 18,
+    "pendientes": 43,
+    "tasa_aprobacion": 81.85
+  },
+  "alertas_fraude": {
+    "total_alertas": 37,
+    "tasa_deteccion": 1.85
+  }
+}

@@ -1,0 +1,749 @@
+{
+  "summary_stats": [
+    {
+      "total_transactions": 2000,
+      "unique_customers": 580,
+      "total_amount": 605402.99,
+      "avg_amount": 302.7,
+      "min_amount": 4.2,
+      "max_amount": 5739.74,
+      "approved": 1637,
+      "declined": 302,
+      "approval_rate": "81.85"
+    }
+  ],
+  "by_country": [
+    {
+      "country": "ES",
+      "total_transactions": 595,
+      "total_amount": 190335.28,
+      "avg_amount": 319.89,
+      "unique_customers": 375,
+      "approval_rate": "81.51"
+    },
+    {
+      "country": "FR",
+      "total_transactions": 391,
+      "total_amount": 116862.46,
+      "avg_amount": 298.88,
+      "unique_customers": 292,
+      "approval_rate": "80.05"
+    },
+    {
+      "country": "UK",
+      "total_transactions": 319,
+      "total_amount": 92969.13,
+      "avg_amount": 291.44,
+      "unique_customers": 250,
+      "approval_rate": "84.95"
+    },
+    {
+      "country": "DE",
+      "total_transactions": 320,
+      "total_amount": 88978.77,
+      "avg_amount": 278.06,
+      "unique_customers": 259,
+      "approval_rate": "81.88"
+    },
+    {
+      "country": "US",
+      "total_transactions": 194,
+      "total_amount": 65466.04,
+      "avg_amount": 337.45,
+      "unique_customers": 163,
+      "approval_rate": "79.90"
+    },
+    {
+      "country": "MX",
+      "total_transactions": 181,
+      "total_amount": 50791.31,
+      "avg_amount": 280.61,
+      "unique_customers": 153,
+      "approval_rate": "83.43"
+    }
+  ],
+  "by_currency": [
+    {
+      "currency": "EUR",
+      "total_transactions": 1306,
+      "total_amount": 396176.51,
+      "avg_amount": 303.35
+    },
+    {
+      "currency": "GBP",
+      "total_transactions": 319,
+      "total_amount": 92969.13,
+      "avg_amount": 291.44
+    },
+    {
+      "currency": "USD",
+      "total_transactions": 194,
+      "total_amount": 65466.04,
+      "avg_amount": 337.45
+    },
+    {
+      "currency": "MXN",
+      "total_transactions": 181,
+      "total_amount": 50791.31,
+      "avg_amount": 280.61
+    }
+  ],
+  "by_category": [
+    {
+      "category": "Cajero",
+      "total_transactions": 217,
+      "total_amount": 73764.3,
+      "avg_amount": 339.93,
+      "percentage": "10.85"
+    },
+    {
+      "category": "Supermercado",
+      "total_transactions": 210,
+      "total_amount": 24770.87,
+      "avg_amount": 117.96,
+      "percentage": "10.50"
+    },
+    {
+      "category": "Hotel",
+      "total_transactions": 207,
+      "total_amount": 85495.78,
+      "avg_amount": 413.02,
+      "percentage": "10.35"
+    },
+    {
+      "category": "Restaurante",
+      "total_transactions": 205,
+      "total_amount": 31924.38,
+      "avg_amount": 155.73,
+      "percentage": "10.25"
+    },
+    {
+      "category": "E-commerce",
+      "total_transactions": 202,
+      "total_amount": 41655.98,
+      "avg_amount": 206.22,
+      "percentage": "10.10"
+    },
+    {
+      "category": "Entretenimiento",
+      "total_transactions": 199,
+      "total_amount": 22876.28,
+      "avg_amount": 114.96,
+      "percentage": "9.95"
+    },
+    {
+      "category": "Transporte",
+      "total_transactions": 198,
+      "total_amount": 14839.99,
+      "avg_amount": 74.95,
+      "percentage": "9.90"
+    },
+    {
+      "category": "Gasolinera",
+      "total_transactions": 193,
+      "total_amount": 18898.26,
+      "avg_amount": 97.92,
+      "percentage": "9.65"
+    },
+    {
+      "category": "Farmacia",
+      "total_transactions": 185,
+      "total_amount": 14521.42,
+      "avg_amount": 78.49,
+      "percentage": "9.25"
+    },
+    {
+      "category": "Transferencia",
+      "total_transactions": 184,
+      "total_amount": 276655.73,
+      "avg_amount": 1503.56,
+      "percentage": "9.20"
+    }
+  ],
+  "by_time_slot": [
+    {
+      "time_slot": "Madrugada",
+      "total_transactions": 148,
+      "total_amount": 34437.01,
+      "avg_amount": 232.68,
+      "declined_count": 19
+    },
+    {
+      "time_slot": "Mañana",
+      "total_transactions": 710,
+      "total_amount": 225415.71,
+      "avg_amount": 317.49,
+      "declined_count": 112
+    },
+    {
+      "time_slot": "Tarde",
+      "total_transactions": 763,
+      "total_amount": 227279.29,
+      "avg_amount": 297.88,
+      "declined_count": 116
+    },
+    {
+      "time_slot": "Noche",
+      "total_transactions": 379,
+      "total_amount": 118270.98,
+      "avg_amount": 312.06,
+      "declined_count": 55
+    }
+  ],
+  "top_customers": [
+    {
+      "customer_id": 108,
+      "total_transactions": 5,
+      "total_spent": 9010.94,
+      "avg_transaction": 1802.19,
+      "account_type": "Empresarial",
+      "declined_count": 1
+    },
+    {
+      "customer_id": 426,
+      "total_transactions": 5,
+      "total_spent": 6850.37,
+      "avg_transaction": 1370.07,
+      "account_type": "Empresarial",
+      "declined_count": 1
+    },
+    {
+      "customer_id": 157,
+      "total_transactions": 3,
+      "total_spent": 6420.64,
+      "avg_transaction": 2140.21,
+      "account_type": "Empresarial",
+      "declined_count": 1
+    },
+    {
+      "customer_id": 517,
+      "total_transactions": 4,
+      "total_spent": 6334.78,
+      "avg_transaction": 1583.7,
+      "account_type": "Premium",
+      "declined_count": 1
+    },
+    {
+      "customer_id": 626,
+      "total_transactions": 3,
+      "total_spent": 6177.05,
+      "avg_transaction": 2059.02,
+      "account_type": "Premium",
+      "declined_count": 0
+    },
+    {
+      "customer_id": 309,
+      "total_transactions": 4,
+      "total_spent": 5933.46,
+      "avg_transaction": 1483.37,
+      "account_type": "Premium",
+      "declined_count": 2
+    },
+    {
+      "customer_id": 243,
+      "total_transactions": 4,
+      "total_spent": 5869.01,
+      "avg_transaction": 1467.25,
+      "account_type": "Empresarial",
+      "declined_count": 0
+    },
+    {
+      "customer_id": 422,
+      "total_transactions": 6,
+      "total_spent": 5695.93,
+      "avg_transaction": 949.32,
+      "account_type": "Premium",
+      "declined_count": 3
+    },
+    {
+      "customer_id": 274,
+      "total_transactions": 3,
+      "total_spent": 5548.2,
+      "avg_transaction": 1849.4,
+      "account_type": "Premium",
+      "declined_count": 1
+    },
+    {
+      "customer_id": 233,
+      "total_transactions": 4,
+      "total_spent": 5300.72,
+      "avg_transaction": 1325.18,
+      "account_type": "Empresarial",
+      "declined_count": 0
+    },
+    {
+      "customer_id": 690,
+      "total_transactions": 4,
+      "total_spent": 5104.74,
+      "avg_transaction": 1276.19,
+      "account_type": "Empresarial",
+      "declined_count": 1
+    },
+    {
+      "customer_id": 589,
+      "total_transactions": 4,
+      "total_spent": 5103.15,
+      "avg_transaction": 1275.79,
+      "account_type": "Premium",
+      "declined_count": 0
+    },
+    {
+      "customer_id": 407,
+      "total_transactions": 4,
+      "total_spent": 5094.1,
+      "avg_transaction": 1273.53,
+      "account_type": "Premium",
+      "declined_count": 2
+    },
+    {
+      "customer_id": 384,
+      "total_transactions": 3,
+      "total_spent": 5055.6,
+      "avg_transaction": 1685.2,
+      "account_type": "Empresarial",
+      "declined_count": 0
+    },
+    {
+      "customer_id": 109,
+      "total_transactions": 3,
+      "total_spent": 4948.28,
+      "avg_transaction": 1649.43,
+      "account_type": "Empresarial",
+      "declined_count": 0
+    },
+    {
+      "customer_id": 640,
+      "total_transactions": 4,
+      "total_spent": 4855.56,
+      "avg_transaction": 1213.89,
+      "account_type": "Premium",
+      "declined_count": 2
+    },
+    {
+      "customer_id": 226,
+      "total_transactions": 4,
+      "total_spent": 4741.53,
+      "avg_transaction": 1185.38,
+      "account_type": "Premium",
+      "declined_count": 1
+    },
+    {
+      "customer_id": 150,
+      "total_transactions": 6,
+      "total_spent": 4697.8,
+      "avg_transaction": 782.97,
+      "account_type": "Empresarial",
+      "declined_count": 0
+    },
+    {
+      "customer_id": 432,
+      "total_transactions": 3,
+      "total_spent": 4668.98,
+      "avg_transaction": 1556.33,
+      "account_type": "Empresarial",
+      "declined_count": 2
+    },
+    {
+      "customer_id": 319,
+      "total_transactions": 8,
+      "total_spent": 4617.86,
+      "avg_transaction": 577.23,
+      "account_type": "Empresarial",
+      "declined_count": 2
+    }
+  ],
+  "fraud_rate_by_hour": [
+    {
+      "hour": 0,
+      "total_transactions": 25,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 1,
+      "total_transactions": 13,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 2,
+      "total_transactions": 19,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 3,
+      "total_transactions": 13,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 4,
+      "total_transactions": 27,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 5,
+      "total_transactions": 38,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 6,
+      "total_transactions": 67,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 7,
+      "total_transactions": 91,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 8,
+      "total_transactions": 127,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 9,
+      "total_transactions": 174,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 10,
+      "total_transactions": 131,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 11,
+      "total_transactions": 120,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 12,
+      "total_transactions": 152,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 13,
+      "total_transactions": 144,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 14,
+      "total_transactions": 147,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 15,
+      "total_transactions": 96,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 16,
+      "total_transactions": 100,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 17,
+      "total_transactions": 124,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 18,
+      "total_transactions": 141,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 19,
+      "total_transactions": 102,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 20,
+      "total_transactions": 57,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 21,
+      "total_transactions": 45,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 22,
+      "total_transactions": 34,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    },
+    {
+      "hour": 23,
+      "total_transactions": 13,
+      "high_risk_count": 0,
+      "high_risk_rate": "0.00"
+    }
+  ],
+  "weekend_vs_weekday": [
+    {
+      "period_type": "Entre Semana",
+      "total_transactions": 1433,
+      "total_amount": 419067.41,
+      "avg_amount": 292.44,
+      "unique_customers": 542
+    },
+    {
+      "period_type": "Fin de Semana",
+      "total_transactions": 567,
+      "total_amount": 186335.58,
+      "avg_amount": 328.63,
+      "unique_customers": 366
+    }
+  ],
+  "by_channel": [
+    {
+      "channel": "Online",
+      "total_transactions": 915,
+      "total_amount": 268635.26,
+      "avg_amount": 293.59,
+      "approval_rate": "81.75"
+    },
+    {
+      "channel": "Movil",
+      "total_transactions": 597,
+      "total_amount": 174954.78,
+      "avg_amount": 293.06,
+      "approval_rate": "81.91"
+    },
+    {
+      "channel": "Presencial",
+      "total_transactions": 389,
+      "total_amount": 123259.82,
+      "avg_amount": 316.86,
+      "approval_rate": "82.01"
+    },
+    {
+      "channel": "ATM",
+      "total_transactions": 99,
+      "total_amount": 38553.13,
+      "avg_amount": 389.43,
+      "approval_rate": "81.82"
+    }
+  ],
+  "high_value_declined": [
+    {
+      "transaction_id": 2994,
+      "customer_id": 274,
+      "country": "US",
+      "amount": 5054.82,
+      "currency": "USD",
+      "category": "Transferencia",
+      "timestamp": "2025-10-12 19:50:41",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 1215,
+      "customer_id": 422,
+      "country": "FR",
+      "amount": 4712.63,
+      "currency": "EUR",
+      "category": "Transferencia",
+      "timestamp": "2025-10-05 09:12:08",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 2336,
+      "customer_id": 108,
+      "country": "ES",
+      "amount": 4463.4,
+      "currency": "EUR",
+      "category": "Transferencia",
+      "timestamp": "2025-10-03 06:29:29",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 2161,
+      "customer_id": 640,
+      "country": "UK",
+      "amount": 4459.45,
+      "currency": "GBP",
+      "category": "Transferencia",
+      "timestamp": "2025-10-08 19:58:35",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 2149,
+      "customer_id": 309,
+      "country": "ES",
+      "amount": 4296.94,
+      "currency": "EUR",
+      "category": "Transferencia",
+      "timestamp": "2025-10-09 09:20:56",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 1704,
+      "customer_id": 226,
+      "country": "FR",
+      "amount": 4131.42,
+      "currency": "EUR",
+      "category": "Transferencia",
+      "timestamp": "2025-10-07 11:39:58",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 1392,
+      "customer_id": 157,
+      "country": "ES",
+      "amount": 4022.73,
+      "currency": "EUR",
+      "category": "Transferencia",
+      "timestamp": "2025-10-01 09:43:21",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 1067,
+      "customer_id": 432,
+      "country": "ES",
+      "amount": 3988.53,
+      "currency": "EUR",
+      "category": "Transferencia",
+      "timestamp": "2025-10-04 13:36:43",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 2171,
+      "customer_id": 294,
+      "country": "FR",
+      "amount": 3913.94,
+      "currency": "EUR",
+      "category": "Transferencia",
+      "timestamp": "2025-10-13 07:53:12",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 2231,
+      "customer_id": 319,
+      "country": "DE",
+      "amount": 3909.77,
+      "currency": "EUR",
+      "category": "Transferencia",
+      "timestamp": "2025-10-12 14:52:01",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 2202,
+      "customer_id": 343,
+      "country": "FR",
+      "amount": 3523.49,
+      "currency": "EUR",
+      "category": "Transferencia",
+      "timestamp": "2025-10-10 09:54:09",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 2643,
+      "customer_id": 180,
+      "country": "US",
+      "amount": 3143.38,
+      "currency": "USD",
+      "category": "Transferencia",
+      "timestamp": "2025-10-08 09:45:51",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 2495,
+      "customer_id": 524,
+      "country": "ES",
+      "amount": 2391.13,
+      "currency": "EUR",
+      "category": "Transferencia",
+      "timestamp": "2025-10-09 14:00:21",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 2050,
+      "customer_id": 287,
+      "country": "US",
+      "amount": 2363.01,
+      "currency": "USD",
+      "category": "Transferencia",
+      "timestamp": "2025-10-08 16:59:36",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 2730,
+      "customer_id": 490,
+      "country": "DE",
+      "amount": 2263.52,
+      "currency": "EUR",
+      "category": "Transferencia",
+      "timestamp": "2025-10-03 14:31:43",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 2936,
+      "customer_id": 407,
+      "country": "US",
+      "amount": 2043.8,
+      "currency": "USD",
+      "category": "Transferencia",
+      "timestamp": "2025-10-14 15:15:34",
+      "risk_score": 4
+    },
+    {
+      "transaction_id": 1577,
+      "customer_id": 318,
+      "country": "UK",
+      "amount": 1980.26,
+      "currency": "GBP",
+      "category": "Transferencia",
+      "timestamp": "2025-10-07 08:11:52",
+      "risk_score": 2
+    },
+    {
+      "transaction_id": 2330,
+      "customer_id": 683,
+      "country": "FR",
+      "amount": 1962.76,
+      "currency": "EUR",
+      "category": "Transferencia",
+      "timestamp": "2025-10-01 00:31:29",
+      "risk_score": 5
+    },
+    {
+      "transaction_id": 2678,
+      "customer_id": 514,
+      "country": "DE",
+      "amount": 1912.64,
+      "currency": "EUR",
+      "category": "Transferencia",
+      "timestamp": "2025-10-13 18:25:56",
+      "risk_score": 2
+    },
+    {
+      "transaction_id": 2881,
+      "customer_id": 595,
+      "country": "DE",
+      "amount": 1875.45,
+      "currency": "EUR",
+      "category": "Transferencia",
+      "timestamp": "2025-10-03 15:07:43",
+      "risk_score": 2
+    }
+  ]
+}

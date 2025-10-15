@@ -1,0 +1,204 @@
+2025-10-15 15:15:03,049 - INFO - ======================================================================
+2025-10-15 15:15:03,049 - INFO - INICIANDO FASE 5: QUERIES ANALÍTICAS
+2025-10-15 15:15:03,049 - INFO - ======================================================================
+2025-10-15 15:15:03,049 - INFO - Creando SparkSession: 05_AnalyticalQueries
+2025-10-15 15:15:04,415 - INFO - ✅ SparkSession creada - Version: 3.5.0
+2025-10-15 15:15:04,415 - INFO - 📂 Cargando datos desde: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/processed
+2025-10-15 15:15:06,308 - INFO - ✅ Tabla cargada: 2000 registros
+
+2025-10-15 15:15:06,308 - INFO - 
+======================================================================
+2025-10-15 15:15:06,308 - INFO - EJECUTANDO: Estadísticas Generales
+2025-10-15 15:15:06,308 - INFO - ======================================================================
+2025-10-15 15:15:06,308 - INFO - SQL:
+
+    SELECT 
+        COUNT(*) as total_transactions,
+        COUNT(DISTINCT customer_id) as unique_customers,
+        ROUND(SUM(amount), 2) as total_amount,
+        ROUND(AVG(amount), 2) as avg_amount,
+        ROUND(MIN(amount), 2) as min_amount,
+        ROUND(MAX(amount), 2) as max_amount,
+        COUNT(CASE WHEN status = 'APPROVED' THEN 1 END) as approved,
+        COUNT(CASE WHEN status = 'DECLINED' THEN 1 END) as declined,
+        ROUND(COUNT(CASE WHEN status = 'APPROVED' THEN 1 END) * 100.0 / COUNT(*), 2) as approval_rate
+    FROM transactions_processed
+    
+
+2025-10-15 15:15:07,168 - INFO - 
+======================================================================
+2025-10-15 15:15:07,168 - INFO - EJECUTANDO: Análisis por País
+2025-10-15 15:15:07,168 - INFO - ======================================================================
+2025-10-15 15:15:07,168 - INFO - SQL:
+
+    SELECT 
+        country,
+        COUNT(*) as total_transactions,
+        ROUND(SUM(amount), 2) as total_amount,
+        ROUND(AVG(amount), 2) as avg_amount,
+        COUNT(DISTINCT customer_id) as unique_customers,
+        ROUND(COUNT(CASE WHEN status = 'APPROVED' THEN 1 END) * 100.0 / COUNT(*), 2) as approval_rate
+    FROM transactions_processed
+    GROUP BY country
+    ORDER BY total_amount DESC
+    
+
+2025-10-15 15:15:07,437 - INFO - 
+======================================================================
+2025-10-15 15:15:07,438 - INFO - EJECUTANDO: Distribución por Moneda
+2025-10-15 15:15:07,438 - INFO - ======================================================================
+2025-10-15 15:15:07,438 - INFO - SQL:
+
+    SELECT 
+        currency,
+        COUNT(*) as total_transactions,
+        ROUND(SUM(amount), 2) as total_amount,
+        ROUND(AVG(amount), 2) as avg_amount
+    FROM transactions_processed
+    GROUP BY currency
+    ORDER BY total_transactions DESC
+    
+
+2025-10-15 15:15:07,561 - INFO - 
+======================================================================
+2025-10-15 15:15:07,561 - INFO - EJECUTANDO: Transacciones por Categoría
+2025-10-15 15:15:07,561 - INFO - ======================================================================
+2025-10-15 15:15:07,561 - INFO - SQL:
+
+    SELECT 
+        category,
+        COUNT(*) as total_transactions,
+        ROUND(SUM(amount), 2) as total_amount,
+        ROUND(AVG(amount), 2) as avg_amount,
+        ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM transactions_processed), 2) as percentage
+    FROM transactions_processed
+    GROUP BY category
+    ORDER BY total_transactions DESC
+    
+
+2025-10-15 15:15:07,728 - INFO - 
+======================================================================
+2025-10-15 15:15:07,728 - INFO - EJECUTANDO: Análisis por Franja Horaria
+2025-10-15 15:15:07,728 - INFO - ======================================================================
+2025-10-15 15:15:07,728 - INFO - SQL:
+
+    SELECT 
+        time_slot,
+        COUNT(*) as total_transactions,
+        ROUND(SUM(amount), 2) as total_amount,
+        ROUND(AVG(amount), 2) as avg_amount,
+        COUNT(CASE WHEN status = 'DECLINED' THEN 1 END) as declined_count
+    FROM transactions_processed
+    GROUP BY time_slot
+    ORDER BY 
+        CASE time_slot
+            WHEN 'Madrugada' THEN 1
+            WHEN 'Mañana' THEN 2
+            WHEN 'Tarde' THEN 3
+            WHEN 'Noche' THEN 4
+        END
+    
+
+2025-10-15 15:15:07,870 - INFO - 
+======================================================================
+2025-10-15 15:15:07,870 - INFO - EJECUTANDO: Top 20 Clientes por Volumen
+2025-10-15 15:15:07,870 - INFO - ======================================================================
+2025-10-15 15:15:07,870 - INFO - SQL:
+
+    SELECT 
+        customer_id,
+        COUNT(*) as total_transactions,
+        ROUND(SUM(amount), 2) as total_spent,
+        ROUND(AVG(amount), 2) as avg_transaction,
+        MAX(account_type) as account_type,
+        COUNT(CASE WHEN status = 'DECLINED' THEN 1 END) as declined_count
+    FROM transactions_processed
+    GROUP BY customer_id
+    ORDER BY total_spent DESC
+    LIMIT 20
+    
+
+2025-10-15 15:15:08,005 - INFO - 
+======================================================================
+2025-10-15 15:15:08,006 - INFO - EJECUTANDO: Tasa de Alto Riesgo por Hora
+2025-10-15 15:15:08,006 - INFO - ======================================================================
+2025-10-15 15:15:08,006 - INFO - SQL:
+
+    SELECT 
+        hour,
+        COUNT(*) as total_transactions,
+        SUM(CASE WHEN risk_score >= 7 THEN 1 ELSE 0 END) as high_risk_count,
+        ROUND(SUM(CASE WHEN risk_score >= 7 THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) as high_risk_rate
+    FROM transactions_processed
+    GROUP BY hour
+    ORDER BY hour
+    
+
+2025-10-15 15:15:08,131 - INFO - 
+======================================================================
+2025-10-15 15:15:08,131 - INFO - EJECUTANDO: Fin de Semana vs Entre Semana
+2025-10-15 15:15:08,131 - INFO - ======================================================================
+2025-10-15 15:15:08,131 - INFO - SQL:
+
+    SELECT 
+        CASE WHEN is_weekend THEN 'Fin de Semana' ELSE 'Entre Semana' END as period_type,
+        COUNT(*) as total_transactions,
+        ROUND(SUM(amount), 2) as total_amount,
+        ROUND(AVG(amount), 2) as avg_amount,
+        COUNT(DISTINCT customer_id) as unique_customers
+    FROM transactions_processed
+    GROUP BY is_weekend
+    ORDER BY is_weekend
+    
+
+2025-10-15 15:15:08,290 - INFO - 
+======================================================================
+2025-10-15 15:15:08,290 - INFO - EJECUTANDO: Análisis por Canal
+2025-10-15 15:15:08,290 - INFO - ======================================================================
+2025-10-15 15:15:08,290 - INFO - SQL:
+
+    SELECT 
+        channel,
+        COUNT(*) as total_transactions,
+        ROUND(SUM(amount), 2) as total_amount,
+        ROUND(AVG(amount), 2) as avg_amount,
+        ROUND(COUNT(CASE WHEN status = 'APPROVED' THEN 1 END) * 100.0 / COUNT(*), 2) as approval_rate
+    FROM transactions_processed
+    GROUP BY channel
+    ORDER BY total_transactions DESC
+    
+
+2025-10-15 15:15:08,391 - INFO - 
+======================================================================
+2025-10-15 15:15:08,391 - INFO - EJECUTANDO: Top Transacciones Alto Valor Rechazadas
+2025-10-15 15:15:08,392 - INFO - ======================================================================
+2025-10-15 15:15:08,392 - INFO - SQL:
+
+    SELECT 
+        transaction_id,
+        customer_id,
+        country,
+        amount,
+        currency,
+        category,
+        timestamp,
+        risk_score
+    FROM transactions_processed
+    WHERE status = 'DECLINED' AND amount > 1000
+    ORDER BY amount DESC
+    LIMIT 20
+    
+
+2025-10-15 15:15:09,771 - INFO - 
+💾 Resultados guardados en JSON: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/results/analytics/analytics_results.json
+2025-10-15 15:15:09,771 - INFO - 
+======================================================================
+2025-10-15 15:15:09,771 - INFO - RESUMEN
+2025-10-15 15:15:09,771 - INFO - ======================================================================
+2025-10-15 15:15:09,771 - INFO - Queries ejecutadas: 10
+2025-10-15 15:15:09,771 - INFO - Resultados guardados en: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/results/analytics
+2025-10-15 15:15:09,771 - INFO - ======================================================================
+2025-10-15 15:15:09,771 - INFO - ✅ FASE 5 COMPLETADA EXITOSAMENTE
+2025-10-15 15:15:09,771 - INFO - Deteniendo SparkSession...
+2025-10-15 15:15:09,868 - INFO - ✅ SparkSession detenida correctamente
+2025-10-15 15:15:09,868 - INFO - Closing down clientserver connection

@@ -1,0 +1,66 @@
+2025-10-15 15:15:10,355 - INFO - ======================================================================
+2025-10-15 15:15:10,355 - INFO - INICIANDO FASE 6: GENERACIÓN DE REPORTES
+2025-10-15 15:15:10,355 - INFO - ======================================================================
+2025-10-15 15:15:10,355 - INFO - Creando SparkSession: 06_GenerateReports
+2025-10-15 15:15:11,742 - INFO - ✅ SparkSession creada - Version: 3.5.0
+2025-10-15 15:15:11,742 - INFO - Generando resumen ejecutivo...
+2025-10-15 15:15:14,572 - INFO - Generando reporte Markdown...
+2025-10-15 15:15:14,572 - INFO - ✅ Reporte Markdown guardado: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/results/reports/report_20251015_151514.md
+2025-10-15 15:15:14,572 - INFO - Generando reporte de texto...
+2025-10-15 15:15:14,572 - INFO - ✅ Reporte de texto guardado: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/results/reports/report_20251015_151514.txt
+2025-10-15 15:15:14,572 - INFO - ✅ Resumen JSON guardado: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/results/reports/summary_20251015_151514.json
+2025-10-15 15:15:14,572 - INFO - 
+
+================================================================================
+REPORTE DE ANÁLISIS BANCARIO - PIPELINE CLOUDERA DATA ENGINEERING
+================================================================================
+
+Fecha de generación: 2025-10-15 15:15:14
+Período analizado: 2025-10-01 a 2025-10-14
+
+================================================================================
+RESUMEN EJECUTIVO
+================================================================================
+
+MÉTRICAS GENERALES:
+  - Total transacciones procesadas: 2,000
+  - Clientes únicos: 580
+  - Monto total procesado: €605,402.99
+  - Monto promedio: €302.70
+
+DISTRIBUCIÓN DE ESTADOS:
+  - Aprobadas: 1,637 (81.85%)
+  - Rechazadas: 302
+  - Fraude: 18
+  - Pendientes: 43
+
+ALERTAS DE FRAUDE:
+  - Total alertas detectadas: 37
+  - Tasa de detección: 1.85%
+
+================================================================================
+PIPELINE EJECUTADO EXITOSAMENTE
+================================================================================
+
+Fases completadas:
+  ✅ Fase 1: Ingesta y validación
+  ✅ Fase 2: Transformación y enriquecimiento
+  ✅ Fase 3: Detección de anomalías
+  ✅ Fase 4: Creación de tablas Hive/Impala
+  ✅ Fase 5: Queries analíticas
+  ✅ Fase 6: Generación de reportes
+
+================================================================================
+
+2025-10-15 15:15:14,572 - INFO - 
+======================================================================
+2025-10-15 15:15:14,572 - INFO - REPORTES GENERADOS
+2025-10-15 15:15:14,572 - INFO - ======================================================================
+2025-10-15 15:15:14,572 - INFO - 📄 Markdown: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/results/reports/report_20251015_151514.md
+2025-10-15 15:15:14,572 - INFO - 📄 Texto: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/results/reports/report_20251015_151514.txt
+2025-10-15 15:15:14,572 - INFO - 📄 JSON: /home/jhon/Escritorio/proyectos/mini-proyecto-cloudera/data/results/reports/summary_20251015_151514.json
+2025-10-15 15:15:14,572 - INFO - ======================================================================
+2025-10-15 15:15:14,572 - INFO - ✅ FASE 6 COMPLETADA EXITOSAMENTE
+2025-10-15 15:15:14,572 - INFO - Deteniendo SparkSession...
+2025-10-15 15:15:14,694 - INFO - ✅ SparkSession detenida correctamente
+2025-10-15 15:15:14,694 - INFO - Closing down clientserver connection
