@@ -77,7 +77,7 @@ graph LR
 | **Security** | Sin autenticación | Ranger + Knox |
 | **Metadata** | Spark SQL | Hive Metastore |
 
-🤝 Casos de Uso
+### 🤝 **Casos de Uso**
 Este proyecto demuestra capacidades aplicables a:
 
 Sector Bancario: Detección de fraude en tiempo real
@@ -87,30 +87,24 @@ IoT: Análisis de eventos de sensores
 Marketing: Segmentación de clientes
 
 
-📖 Documentación Adicional
 
-Guía de Desarrollo (próximamente)
-Arquitectura Detallada (próximamente)
-Preguntas Frecuentes (próximamente)
+### 👤 **Autor**
+**Jhon Limones**
+**MLOps Engineer | DevOps Specialist | Data Engineer**
 
-
-👤 Autor
-Jhon Limones
-MLOps Engineer | DevOps Specialist | Data Engineer
-
-📧 Email: [jhonlimones.developer@gmailcom]
-💼 LinkedIn: [https://www.linkedin.com/in/jhon-limones-992b7b331/]
-🐙 GitHub: https://github.com/jhonlimones
+📧 **Email**: [jhonlimones.developer@gmailcom]
+💼 **LinkedIn**: [https://www.linkedin.com/in/jhon-limones-992b7b331/]
+🐙 **GitHub**: https://github.com/jhonlimones
 
 
-📄 Licencia
+### 📄 **Licencia**
 Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
 
-🙏 Agradecimientos
+### 🙏 **Agradecimientos**
 Proyecto desarrollado como demostración técnica para la posición de Cloudera Data Engineer.
 Formación base: Analista de Datos Big Data (120h) - Cloudera - Academia PUE DATA
 
-⭐ Si te resultó útil
+### ⭐ **Si te resultó útil**
 Si este proyecto te ayudó, considera darle una ⭐ en GitHub!
 
 Desarrollado con ❤️ para el ecosistema Cloudera
